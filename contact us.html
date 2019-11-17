@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<script src="jquery/jquery-3.4.1.min.js"></script>
+<style>
+	nav ul
+	{
+		list-style-type:none;
+		font-family:"Century Gothic";
+	}
+	nav ul li
+	{
+		float:left;
+		padding-top:25px;
+		padding-bottom:35px;
+	}
+	nav ul li a
+	{
+		padding:1.5em;
+		color:white;
+	}
+	nav ul li a:hover
+	{
+		color:white;
+	}
+	nav ul li ul
+	{
+		position:absolute;
+		width:190px;
+		padding-left:0px;
+		background-color:#FD004B;
+	}
+	nav ul li ul li
+	{
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	
+	.site-btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	padding: 12px 30px;
+	min-width: 145px;
+	border: 2px solid #FD004B;
+	background: #FD004B;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	}
+
+	
+	.social-icons {
+  		text-align: center;
+  	}  
+	.social-icons li {
+  		display:inline-block;
+  		list-style-type:none;
+  		-webkit-user-select:none;
+  		-moz-user-select:none;
+  	}
+	.social-icons li a {
+ 		border-bottom: none;
+  	}
+	.social-icons li img {
+  		width:50px;
+  		height:50px;
+  		margin-right: 20px;
+	}
+</style>
+<script>
+	$("document").ready(
+		function()
+		{
+			$("nav ul li ul").hide().removeClass("fallback");
+			$("nav ul li").hover(
+				function()
+				{
+					$("ul",this).stop().slideDown(100);
+				} ,
+				function()
+				{
+					$("ul",this).stop().slideUp(100);
+				}
+
+			);
+		}
+	);
+</script>
+</head>
+
+<body class="container" style="font-family:'Century Gothic';">
+	<div class="row">
+    	<div class="col-md-3" style="height:300; background-color:black;">
+        	<img src="images/3/logo.png" width="300" height="300">
+        </div>
+        <div class="col-md-9">
+        	<div class="row">
+            	 <div class="col-md-12" style="background-image:url(images/img/page-top-bg/2.jpg); background-repeat:no-repeat; height:220px;"></div>
+            </div>
+            <div class="row">
+    			<div class="col-md-12" style="background-color:black; height:80px;">
+        			<div class="row">
+        				<div class="col-md-9">
+							<div class="row">
+    							<nav class="col-md-12">
+        							<ul>
+            							<li><a href="home.html">Home</a></li>
+                						<li><a href="products.html">Products</a>
+                							<ul class="fallback">
+                    							<li><a href="#">Hair</a></li>
+                        						<li><a href="#">Skin</a></li>
+                      							<li><a href="#">Nails</a></li>
+                      							<li><a href="#">Jewellery</a></li>
+                                                <li><a href="#">Make-up</a></li>
+                                                <li><a href="#">Wedding</a></li>
+                    						</ul>
+                						</li>
+                						<li><a href="services.html">Services</a>
+                							<ul class="fallback">
+                    							<li><a href="#">Make Up</a></li>
+                        						<li><a href="#">Massage</a></li>
+                        						<li><a href="#">Hair Dressing</a></li>
+                                                <li><a href="#">Manicure & Pedicure</a></li>
+                    						</ul>
+                						</li>
+                						<li><a href="news.html">News</a>
+                							<ul class="fallback">
+                    							<li><a href="#">Offers</a></li>
+                        						<li><a href="#">Upcoming</a></li>
+                    						</ul>
+                						</li>
+                						<li><a href="about us.html">About Us</a></li>
+                						<li style="background-color:#FD004B;"><a href="contact us.html">Contact Us</a></li>
+            						</ul>
+        						</nav>
+    						</div>
+    					</div>
+        				<div class="col-md-3">
+                			<div class="row">
+             					<div class="col-md-12" align="center">
+                					<br><input style="background-color:#FD004B; color:white; height:40px; border:none;" type="button" value="Book an Appointment">
+             					</div>
+                    		</div>
+        				</div>
+    				</div>
+				</div>
+			</div>
+        </div>
+	</div>
+    <div class="row" style="height:5px; background-color:#FD004B;">
+    </div>
+    <div class="row" style="background-image:url(images/img/page-top-bg/3.jpg); background-position:center; height:224px;">
+		<div class="col-md-12" style="height:224px;">
+			<h1 align="center" style="color:white; font-size:50px; padding-top:100px;"><b>Contact Us</b></h1>
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="col-md-6">
+        	<h2>We'd Love to Hear From You</h2>
+        	<ul style="list-style-type:none; font-size:16px;">
+            	<li><img src="images/PNG/Circle Black White/vector60-1060-01.jpg" width="70" height="70"> simplonsbeautycare@gmail.com</li>
+                <li><img src="images/PNG/Circle Black White/illust58-2121.jpg" width="70" height="70"> +256 703 866 900</li>
+            </ul>
+            <h2>Follow Us</h2>
+            <ul style="list-style-type:none; font-size:16px;">
+                <li><img src="images/PNG/Circle Black White/Facebook.png" width="70" height="70"> Simplon's Beauty Care</li>
+                <li><img src="images/PNG/Circle Black White/Twitter.png" width="70" height="70"> simplonsbeautycare</li>
+                <li><img src="images/PNG/Circle Black White/Instagram.png" width="70" height="70"> simplonsbeautycare</li>
+            </ul>
+        </div>
+    	<div class="col-md-6">
+			<h2>Get in Touch</h2>
+			<form class="contact-form">
+            	<div class="row">
+                	<div class="col-md-6">
+						<input type="text" placeholder=" Your Name" style="height:50px; width:250px; border-left:0px; border-right:0px; border-top:0px;">
+					</div>
+					<div class="col-md-6">
+						<input type="text" placeholder=" Your E-mail" style="height:50px; width:250px; border-left:0px; border-right:0px; border-top:0px;">
+					</div>
+                </div>
+                <br>
+				<div class="row">
+					<div class="col-md-12">
+						<input type="text" placeholder=" Subject" style="height:50px; width:540px; border-left:0px; border-right:0px; border-top:0px;"><br><br>
+						<textarea placeholder=" Your Message" style="height:100px; width:540px; border-left:0px; border-right:0px; border-top:0px;"></textarea><br>
+						<button class="site-btn">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+    </div>
+    <div class="row">
+    	<h2>Find a Store</h2>
+    </div>
+    <div class="row" align="center" style="background-color:black; height:120px;">
+    	<br>
+        <ul class="social-icons">
+    		<li><a href="http://www.facebook.com"><img src="images/PNG/Circle Black White/Facebook.png" width="70" height="70"></a></li>
+    		<li><a href="http://www.twitter.com"><img src="images/PNG/Circle Black White/Instagram.png" width="70" height="70"></a></li>
+    		<li><a href="http://www.youtube.com"><img src="images/PNG/Circle Black White/Twitter.png" width="70" height="70"></a></li>
+		</ul>
+        <p style="color:#999;">Copyright ©2019 Simplon's Beauty Care Centre All rights reserved | Design by Sawa-Kawa.</p>
+    </div>
+</body>

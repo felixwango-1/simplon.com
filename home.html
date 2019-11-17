@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simplon's</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<script src="jquery/jquery-3.4.1.min.js"></script>
+<style>
+	nav ul
+	{
+		list-style-type:none;
+		font-family:"Century Gothic";
+	}
+	nav ul li
+	{
+		float:left;
+		padding-top:25px;
+		padding-bottom:35px;
+	}
+	nav ul li a
+	{
+		padding:1.5em;
+		color:white;
+	}
+	nav ul li a:hover
+	{
+		color:white;
+	}
+	nav ul li ul
+	{
+		position:absolute;
+		width:120px;
+		padding-left:0px;
+		background-color:#FD004B;
+	}
+	nav ul li ul li
+	{
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	
+	.social-icons {
+  		text-align: center;
+  	}  
+	.social-icons li {
+  		display:inline-block;
+  		list-style-type:none;
+  		-webkit-user-select:none;
+  		-moz-user-select:none;
+  	}
+	.social-icons li a {
+ 		border-bottom: none;
+  	}
+	.social-icons li img {
+  		width:50px;
+  		height:50px;
+  		margin-right:20px;
+	}
+</style>
+<script>
+	$("document").ready(
+		function()
+		{
+			$("nav ul li ul").hide().removeClass("fallback");
+			$("nav ul li").hover(
+				function()
+				{
+					$("ul",this).stop().slideDown(100);
+				} ,
+				function()
+				{
+					$("ul",this).stop().slideUp(100);
+				}
+
+			);
+		}
+	);
+</script>
+</head>
+
+<body class="container" style="font-family:'Century Gothic';">
+	<div class="row">
+    	<div class="col-md-3" style="height:300; background-color:black;">
+        	<img src="images/3/logo.png" width="300" height="300">
+        </div>
+        <div class="col-md-9">
+        	<div class="row">
+            	 <div class="col-md-12" style="background-image:url(images/img/page-top-bg/2.jpg); background-position:center; background-repeat:no-repeat; height:220px;"></div>
+            </div>
+            <div class="row">
+    			<div class="col-md-12" style="background-color:black; height:80px;">
+        			<div class="row">
+        				<div class="col-md-9">
+							<div class="row">
+    							<nav class="col-md-12">
+        							<ul>
+            							<li style="background-color:#FD004B;"><a href="home.html">Home</a></li>
+                						<li><a href="products.html">Products</a>
+                							<ul class="fallback">
+                   							  <li><a href="#">Hair</a></li>
+                        						<li><a href="#">Skin</a></li>
+                      							<li><a href="#">Nails</a></li>
+                      							<li><a href="#">Jewellery</a></li>
+                                                <li><a href="#">Make-up</a></li>
+                                                <li><a href="#">Wedding</a></li>
+                    						</ul>
+                						</li>
+                						<li><a href="services.html">Services</a>
+                							<ul class="fallback">
+                    							<li><a href="#">Make Up</a></li>
+                        						<li><a href="#">Massage</a></li>
+                        						<li><a href="#">Hair Dressing</a></li>
+                                                <li><a href="#">Manicure & Pedicure</a></li>
+                    						</ul>
+                						</li>
+                						<li><a href="news.html">News</a>
+                							<ul class="fallback">
+                    							<li><a href="#">Offers</a></li>
+                        						<li><a href="#">Upcoming</a></li>
+                    						</ul>
+                						</li>
+                						<li><a href="about us.html">About Us</a></li>
+                						<li><a href="contact us.html">Contact Us</a></li>
+            						</ul>
+        						</nav>
+    						</div>
+    					</div>
+        				<div class="col-md-3">
+                			<div class="row">
+             					<div class="col-md-12" align="center">
+                					<br><input style="background-color:#FD004B; color:white; height:40px; border:none;" type="button" value="Book an Appointment">
+             					</div>
+                    		</div>
+        				</div>
+    				</div>
+				</div>
+			</div>
+        </div>
+	</div>
+    <div class="row" style="height:5px; background-color:#FD004B;">
+    </div>
+    <div class="row" style="background-image:url(images/img/bg.jpg); background-position:center;">
+    	<div class="row">
+        	<div class="col-md-12" style="height:200px;"></div>
+    	</div>
+    	<div class="row">
+        	<div class="col-md-1"></div>
+        	<div class="col-md-5" style="background-color:black; height:435px; border-style:solid; border-width:thick; border-color:#FD004B;">
+        		<h1 style="color:white;" align="center">FOR THE BOLD AND THE BEAUTIFUL</h1>
+                <p align="center" style="font-size:25px; color:white;">
+                We offer a variety of beauty services to meet your needs. All services are provided at minimal cost and made by apppointment.
+                </p>
+             	<br><br><br><br>
+             	<p align="center"><input style=" background-color:#FD004B; color:white; height:40px; border:none;" type="button" value="See Offers"></p>
+        	</div>
+        	<div class="col-md-5" align="right" style="border-style:solid; border-width:thick; border-color:#FD004B; height:435px; background-image:url(images/about-1.jpg); background-repeat:no-repeat;">
+        	</div>
+        	<div class="col-md-1"></div>
+		</div>
+    	<div class="row">
+        	<div class="col-md-12" style="height:100px;"></div>
+		</div>
+    </div>
+    <div class="row" align="center" style="background-color:black; height:120px;">
+    	<br>
+        <ul class="social-icons">
+    		<li><a href="http://www.facebook.com"><img src="images/PNG/Circle Black White/Facebook.png" width="70" height="70"></a></li>
+    		<li><a href="http://www.twitter.com"><img src="images/PNG/Circle Black White/Instagram.png" width="70" height="70"></a></li>
+    		<li><a href="http://www.youtube.com"><img src="images/PNG/Circle Black White/Twitter.png" width="70" height="70"></a></li>
+		</ul>
+        <p style="color:#999;">Copyright ©2019 Simplon's Beauty Care Centre All rights reserved | Design by Sawa-Kawa.</p>
+    </div>
+</body>

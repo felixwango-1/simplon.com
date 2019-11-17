@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" name="viewport" content="width=device-width, initial scale=1"/>
+<title>dropdown</title>
+<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<style>
+	.mainmenubtn{
+		background-color:black;
+		color:white;
+		border:none;
+		cursor:pointer;
+		padding:20px;
+	}
+	.mainmenubtn:hover{
+		background-color:#FD004B;
+	}
+	.dropdown{
+		position:relative;
+		display:inline-block;
+	}
+	.dropdown-child{
+		display:none;
+		background-color:#FD004B;
+		min-width:200px;
+	}
+	.dropdown-child a{
+		color:white;
+		padding:20px;
+		text-decoration:none;
+		display:block;
+	}
+	.dropdown:hover .dropdown-child{
+		display:block;
+	}
+</style>
+</head>
+
+<body>
+	<!--<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+	</div>-->
+    
+<div class="dropdown">
+	<div class="row">
+    	<div class="col-md-4">
+    		<div class="mainmenubtn">Products</div>
+        	<div class="dropdown-child">
+        		<a href="#">Hair</a>
+            	<a href="#">Skin</a>
+            	<a href="#">Nails</a>
+                <a href="#">Jewellery</a>
+        	</div>
+         </div>
+        <div class="col-md-4">
+        	<div class="mainmenubtn">Services</div>
+        	<div class="dropdown-child">
+        		<a href="#">Hair</a>
+            	<a href="#">Skin</a>
+            	<a href="#">Nails</a>
+                <a href="#">Jewellery</a>
+        	</div>
+         </div>
+         <div class="col-md-4">
+            <div class="mainmenubtn" class="col-md-4">News</div>
+        	<div class="dropdown-child">
+        		<a href="#">Hair</a>
+            	<a href="#">Skin</a>
+            	<a href="#">Nails</a>
+                <a href="#">Jewellery</a>
+        	</div>
+         </div>
+	</div>
+</div>
+         
+<ul>
+	<li>feedback</li>
+    <li>locations</li>
+    <li>social media</li>
+    <li>phone</li>
+    <li>email</li>
+</ul>
+<div class="row" style="background-image:url(images/img/page-top-bg/3.jpg); background-position:center; height:224px;">
+	<div class="col-md-12" style="height:224px;">
+		<h1 align="center" style="color:white; font-size:50px; padding-top:20px;">Contact Us</h1>
+    </div>
+    <div class="col-md-6">
+    <form class="contact-form">
+		<div class="row">
+			<div class="col-md-6">
+				<input type="text" placeholder="Your Name">
+			</div>
+			<div class="col-md-6">
+				<input type="text" placeholder="Your E-mail">
+			</div>
+			<div class="col-md-12">
+				<input type="text" placeholder="Subject">
+				<textarea placeholder="Your Message"></textarea>
+				<button class="site-btn">Submit</button>
+			</div>
+		</div>
+	</form>
+    </div>
+</div>
+
+</body>
+</html>
